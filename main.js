@@ -7,7 +7,6 @@ navBarBtn.onclick = function() {
    let navCall = document.getElementById('navCall');
   
   barOne.classList.toggle('barOneMove');
-  //barTwo.classList.toggle('');
   barThi.classList.toggle('barThiMove');
 navCall.classList.toggle('widthNav');
 }
