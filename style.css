@@ -8,7 +8,7 @@ body {
 }
 
 .nav-m {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 80px;
   background: #1F1F1F;
@@ -91,7 +91,7 @@ body {
 .navBlock {
   width: 0px;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   left: 0;
   background: #1F1F1F;
   top: 0;
@@ -114,20 +114,35 @@ body {
 .flexCenter {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(35deg, #4fafa7, #378bdf);
+  background-image: url('/layered-waves-haikei (1).svg');
+  background-repeat: no-repeat;
+  animation: backMove 55s linear infinite;
+}
+
+@keyframes backMove {
+  0% {
+    background-position: 00% 00%;
+  }
+
+  50% {
+    background-position: 100% 00%;
+  }
+
+  100% {
+    background-position: 00% 00%;
+  }
+
 }
 
 .greetTxt {
   width: 100%;
   height: 200px;
   position: relative;
-  top: 100px;
+  top: 10px;
 }
 
 .flexCenter h1 {
   font-size: 4rem;
   margin-left: 100px;
-  mix-blend-mode: color-burn;
-  isolation: isolate;
-  opacity: 0.8;
+  color: rgb(231, 228, 228);
 }
