@@ -134,15 +134,32 @@ body {
 
 }
 
-.greetTxt {
+.greetTxt,
+.seeOurProducts {
   width: 100%;
   height: 200px;
   position: relative;
-  top: 10px;
+  top: 20px;
 }
 
 .flexCenter h1 {
   font-size: 4rem;
   margin-left: 100px;
   color: rgb(231, 228, 228);
+}
+
+.seeOurProducts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.btnProd {
+  background: none;
+  border: 2px solid #fff;
+  padding: 30px 80px 30px 80px;
+  color: #fff;
+  border-radius: 50px;
+  font-family: Outfit;
+  font-size: 1.5rem;
 }
