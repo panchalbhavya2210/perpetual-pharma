@@ -57,6 +57,7 @@ body {
   z-index: -2;
   animation: scaler 55s linear infinite;
   background-position: center;
+  background-repeat: no-repeat;
 }
 @keyframes scaler {
   0% {
