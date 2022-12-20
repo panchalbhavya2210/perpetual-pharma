@@ -129,6 +129,7 @@ body {
   font-size: 2rem;
 }
 .gradient {
+  position: relative;
   color: transparent;
 
   background: rgb(124, 249, 233);
@@ -157,6 +158,12 @@ body {
   100% {
     background-position: -0% 0%;
   }
+}
+.shadowText {
+  position: absolute;
+  left: 0;
+  filter: blur(2px);
+  z-index: -1;
 }
 .header-s {
   width: 100%;
