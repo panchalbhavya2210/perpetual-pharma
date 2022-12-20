@@ -83,3 +83,20 @@ body {
   height: 100vh;
   z-index: 5;
 }
+
+@media only screen and (max-width: 670px) {
+  .header-m {
+    background-size: 300%;
+  }
+  @keyframes scaler {
+    0% {
+      background-size: 300%;
+    }
+    50% {
+      background-size: 310%;
+    }
+    100% {
+      background-size: 300%;
+    }
+  }
+}
