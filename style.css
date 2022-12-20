@@ -70,15 +70,58 @@ body {
   text-transform: uppercase;
   width: 240px;
   height: 40px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 50px;
-  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
   font-size: 1.2rem;
   letter-spacing: 1px;
+  border: 2px solid rgb(255, 255, 255);
+  overflow: hidden;
+  transition: 1s;
+}
+.afterBefore {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.afterBefore::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  height: 100vh;
+  width: 0%;
+  background-color: #fff;
+  z-index: -1;
+  transition: 1s;
+}
+.afterBefore::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 100vh;
+  width: 0%;
+  background-color: #fff;
+  z-index: -1;
+  transition: 1s;
+}
+.greetDay:hover {
+  color: #000;
+}
+.greetDay:hover .afterBefore::before {
+  width: 100%;
+}
+.greetDay:hover .afterBefore::after {
+  width: 100%;
 }
 .welcomeUser {
   text-align: center;
