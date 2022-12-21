@@ -31,7 +31,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 1.5rem;
-  margin: 0 0 0 25px;
+  margin: 0 0 0 20px;
   display: flex;
   align-items: center;
 }
@@ -40,8 +40,10 @@ body {
 }
 .imgLogo {
   width: 40px;
+  height: 40px;
+  /* width: 40px;
   height: 5%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.516); */
 }
 .header-m {
   width: 100%;
