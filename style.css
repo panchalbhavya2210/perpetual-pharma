@@ -189,6 +189,7 @@ body {
   font-size: 1.2rem;
   overflow: hidden;
   cursor: pointer;
+  transition: 0.4s;
 }
 .btnAfter {
   position: relative;
@@ -230,6 +231,9 @@ body {
 .explore:hover .btnAfter::before {
   transition-delay: 0.4s;
   top: -40%;
+}
+.explore:hover {
+  color: transparent;
 }
 .header-s {
   width: 100%;
