@@ -25,6 +25,7 @@ body {
   z-index: 555;
   top: 0;
   box-shadow: 0 0 15px #000;
+  backdrop-filter: blur(5px);
 }
 
 .title {
@@ -90,6 +91,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: not-allowed;
 }
 
 .afterBefore::after {
@@ -165,6 +167,70 @@ body {
   filter: blur(2px);
   z-index: -1;
 }
+.buttonToExplore {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+}
+.explore {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 50px;
+  font-family: Hanken Grotesk;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btnAfter {
+  position: relative;
+}
+.btnAfter::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  background: rgb(255, 255, 255);
+  width: 10%;
+  height: 10px;
+  border-radius: 100%;
+  transform: scale(0);
+  transition: 0.8s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: -1;
+}
+.btnAfter::before {
+  content: url("/img/arrow_downward_FILL0_wght400_GRAD0_opsz48.svg");
+  position: absolute;
+  top: -200%;
+  left: 25%;
+  /* background: rgb(233, 211, 87); */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 2;
+  transition: 0.3s;
+  transform: scale(0.8);
+}
+.explore:hover .btnAfter::after {
+  transform: scale(25);
+}
+.explore:hover .btnAfter::before {
+  transition-delay: 0.4s;
+  top: -40%;
+}
 .header-s {
   width: 100%;
   height: 100vh;
@@ -174,7 +240,7 @@ body {
   background-image: url("/img/shubham-dhage-mjl0yIdSi18-unsplash.jpg");
   background-size: 100% 100%;
   object-fit: cover;
-  z-index: -2;
+  z-index: -5;
   animation: scaler 55s linear infinite;
   background-position: center;
   background-repeat: no-repeat;
@@ -218,5 +284,10 @@ body {
     100% {
       background-size: 300%;
     }
+  }
+  .welcomeUser {
+    text-align: center;
+    margin: 40px 0 0 0;
+    font-size: 1.3rem;
   }
 }
