@@ -13,3 +13,12 @@ if (hours == 00) {
 } else if (hours > 17 && hours < 23) {
   greetDayToUser.innerHTML = "Good Evening";
 }
+
+let runWindSc = document.getElementById("runWindScroll");
+
+runWindSc.addEventListener("click", () => {
+  window.scrollTo({
+    top: 555,
+    behavior: "smooth",
+  });
+});
