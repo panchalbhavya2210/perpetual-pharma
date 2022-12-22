@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  font-family: Hanken Grotesk;
+  font-family: Outfit;
   background-color: #000;
   height: 1000vh;
   color: #fff;
@@ -141,9 +140,7 @@ body {
     49deg,
     rgba(124, 249, 233, 1) 15%,
     rgba(65, 205, 249, 1) 30%,
-    rgba(80, 131, 255, 1) 50%,
-    rgba(181, 150, 255, 1) 70%,
-    rgba(244, 135, 188, 1) 91%
+    rgb(174, 197, 255) 50%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -185,7 +182,7 @@ body {
   background: none;
   color: #fff;
   border-radius: 50px;
-  font-family: Hanken Grotesk;
+  font-family: Outfit;
   font-weight: bolder;
   letter-spacing: 2px;
   font-size: 1.2rem;
@@ -243,7 +240,7 @@ body {
   overflow: hidden;
   position: absolute;
   top: 0;
-  background-image: url("/img/shubham-dhage-mjl0yIdSi18-unsplash.jpg");
+  background-image: url("/img/milad-fakurian-PjG_SXDkpwQ-unsplash.jpg");
   background-size: 100% 100%;
   object-fit: cover;
   z-index: -5;
