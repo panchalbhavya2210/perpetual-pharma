@@ -18,7 +18,7 @@ let runWindSc = document.getElementById("runWindScroll");
 
 runWindSc.addEventListener("click", () => {
   window.scrollTo({
-    top: 535,
+    top: 605,
     behavior: "smooth",
   });
 });

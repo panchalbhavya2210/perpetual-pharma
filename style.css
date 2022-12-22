@@ -28,7 +28,7 @@ body {
 }
 
 .title {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 1.5rem;
   margin: 0 0 0 20px;
   display: flex;
@@ -240,7 +240,7 @@ body {
   overflow: hidden;
   position: absolute;
   top: 0;
-  background-image: url("/img/milad-fakurian-PjG_SXDkpwQ-unsplash.jpg");
+  background-image: url("/img/milad-fakurian-0_8gAoFrzbw-unsplash.jpg");
   background-size: 100% 100%;
   object-fit: cover;
   z-index: -5;
@@ -272,7 +272,38 @@ body {
   height: 100vh;
   z-index: -1;
 }
+.aboutUsMain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.aboutUsDetails,
+.aboutUsGallery {
+  width: 50%;
+  height: 100vh;
+}
+.abtTxt,
+.imageTop {
+  position: relative;
+  top: 80px;
+  margin: 0 0 0 20px;
+}
 
+.abtTxt h1 {
+  margin: 20px 0 20px 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: rgb(175, 37, 255);
+}
+.abtTxt p {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+.imageGalleryMain {
+  width: 100%;
+  height: 170px;
+  background: linear-gradient(45deg, #f00, #000);
+}
 @media only screen and (max-width: 670px) {
   .header-s {
     background-size: 360%;
