@@ -51,6 +51,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .greetUser {
   width: 100%;
@@ -240,26 +241,35 @@ body {
 .header-s {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   position: absolute;
   top: 0;
-  background-image: url("/img/milad-fakurian-0_8gAoFrzbw-unsplash.jpg");
+  /* background-image: url("/img/milad-fakurian-0_8gAoFrzbw-unsplash.jpg"); */
+  /* background-image: url("/img/gradienta-n2XqPm7Bqhk-unsplash.jpg"); */
+  background-image: url("/img/magicpattern-65O4Dw6-xLg-unsplash\ \(1\).jpg");
+
   background-size: 100% 100%;
   object-fit: cover;
   z-index: -5;
   animation: scaler 55s linear infinite;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 @keyframes scaler {
   0% {
     background-size: 100%;
+    rotate: 0;
+    scale: 1;
   }
   50% {
     background-size: 110%;
+    rotate: 15deg;
+    scale: 2;
   }
   100% {
     background-size: 100%;
+    rotate: 0;
+    scale: 1;
   }
 }
 .brightNess {
