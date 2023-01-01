@@ -404,7 +404,7 @@ body {
   align-items: flex-start;
 }
 .medicinesAccordion {
-  width: 70%;
+  width: 90%;
   height: 70vh;
   background-color: rgba(210, 210, 210, 0.073);
   backdrop-filter: blur(3px);
@@ -421,10 +421,17 @@ body {
   align-items: center;
   border-bottom: 0.5px solid rgb(82, 82, 82);
   cursor: pointer;
+  justify-content: space-between;
 }
 .medAccord p {
   margin: 0 0 0 20px;
   font-size: 1.1rem;
+}
+.medAccord img {
+  margin: 0 20px 0 0;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s linear;
 }
 .accordionMainOne {
   height: 0vh;
@@ -433,6 +440,9 @@ body {
 }
 .accordToggle {
   height: 30vh;
+}
+.rotatePlus {
+  transform: rotate(495deg);
 }
 @media only screen and (max-width: 670px) {
   .header-s {

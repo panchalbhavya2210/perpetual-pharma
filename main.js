@@ -23,28 +23,15 @@ runWindSc.addEventListener("click", () => {
   });
 });
 
-// for (const clicker of medAccord) {
-//   clicker.addEventListener("click", () => {
-//     alert(1);
-//   });
-// }
-const medAccord = document.querySelectorAll(".medAccord");
-const accordMain = document.querySelectorAll(".accordionMainOne");
+let medAccord = document.querySelectorAll(".medAccord");
 
-function letAccordBtn() {
-  for (let i = 0; i < 18; i++) {
-    let classNames = new Array();
-    classNames[i] = accordMain[i].className;
-    // console.log(classNames[i])
-      accordMain[i].className = "accordionMainOne accordMain";
+for (let i = 0; i < medAccord.length; i++) {
+  medAccord[i].addEventListener("click", () => {
+    let accordionMainOne = document.querySelectorAll(".accordionMainOne");
+    accordionMainOne[i].classList.toggle("accordToggle");
 
-      // if (accordMain[i].classList.contains("accordToggle")) {
-      //   accordMain[i].classList.remove("accordToggle");
-      // } else {
-      //   accordMain[i].classList.add("accordToggle");
-      // }
-    });
-  }
+    let imgPlus = document.querySelectorAll(".imgPlus");
+
+    imgPlus[i].classList.toggle("rotatePlus");
+  });
 }
-
-medAccord.onclick = letAccordBtn();
