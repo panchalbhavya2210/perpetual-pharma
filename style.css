@@ -426,6 +426,7 @@ body {
 .medAccord p {
   margin: 0 0 0 20px;
   font-size: 1.1rem;
+  font-weight: bolder;
 }
 .medAccord img {
   margin: 0 20px 0 0;
@@ -437,6 +438,11 @@ body {
   height: 0vh;
   overflow: hidden;
   transition: 0.4s;
+  display: block;
+  text-align: left;
+}
+.margOne {
+  margin: 20px;
 }
 .accordToggle {
   height: 30vh;
