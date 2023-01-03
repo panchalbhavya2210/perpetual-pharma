@@ -417,7 +417,8 @@ body {
   width: 90%;
   height: 70vh;
   background-color: rgba(210, 210, 210, 0.073);
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
+
   /* padding: 10px 20px; */
   overflow: scroll;
   border-radius: 10px;
